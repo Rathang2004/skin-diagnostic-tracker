@@ -5,6 +5,7 @@ import numpy as np
 from PIL import Image
 import io
 import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 # Load the trained model
 model = tf.keras.models.load_model("skin_diagnostic_model.h5")
