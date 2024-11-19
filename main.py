@@ -4,6 +4,7 @@ from flask_cors import CORS
 import numpy as np
 from PIL import Image
 import io
+import os
 
 # Load the trained model
 model = tf.keras.models.load_model("skin_diagnostic_model.h5")
@@ -43,4 +44,4 @@ def diagnose():
  
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
