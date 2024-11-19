@@ -7,11 +7,11 @@ import io
 import os
 
 # Load the trained model
-model = tf.keras.models.load_model("/Users/rathangpandit/Desktop/skin-diagnostic-tracker/skin_diagnostic_model.h5")
+model = tf.keras.models.load_model("skin_diagnostic_model.h5")
 
 app = Flask(__name__)
 CORS(app)
-
+x
 classes = {
     0: "akiec",
     1: "bcc",
