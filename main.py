@@ -11,7 +11,7 @@ model = tf.keras.models.load_model("skin_diagnostic_model.h5")
 
 app = Flask(__name__)
 CORS(app)
-x
+
 classes = {
     0: "akiec",
     1: "bcc",
